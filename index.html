@@ -3,187 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Uzziel</title>
+    <title>Hanitzy</title>
     <style>
-        /* Estilos originales de la página */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Verdana', sans-serif;
+            background-color: #fff5f7; /* Fondo general rosita muy suave */
+            color: #4a3b4c;
             margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
+            padding: 20px;
         }
 
-        header {
-            background-color: #1f2937;
-            color: #ffffff;
+        h1 {
+            font-family: Georgia, serif;
             text-align: center;
-            padding: 2rem 1rem;
+            color: #d63384; /* Tono fucsia/rosa elegante */
         }
 
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* Hace la foto de perfil circular */
-            object-fit: cover;
-            border: 4px solid #3b82f6;
-            margin-bottom: 1rem;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            background: #ffffff;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        h1, h2 {
-            color: #1e40af;
-        }
-
-        .img-seccion {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin: 1rem 0;
-        }
-
-        /* Clase específica para hacer más chica la imagen de pasatiempos */
-        .img-chica {
-            width: 250px;
-            max-height: 250px;
-            display: block;
-            border-radius: 6px;
-            margin: 1rem 0;
-            object-fit: cover;
-        }
-
-        ul, ol {
-            padding-left: 1.2rem;
+        p {
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            color: #5c4b5f;
         }
 
         li {
-            margin-bottom: 0.5rem;
+            text-align: center;
+            color: #5c4b5f;
+            margin-bottom: 5px;
         }
 
+        /* Estilo general para las cajas */
+        .caja {
+            background-color: #ffffff;
+            border: 2px solid #f8d7da; /* Borde rosa pastel claro */
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            box-shadow: 0 6px 15px rgba(214, 51, 132, 0.08); /* Sombra suave rosada */
+        }
+
+        /* Contenedor para alinear las imágenes de la cabecera */
+        .imagen {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        /* Estilo para las imágenes dentro de flex */
+        .ima {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 6px solid #fce8ef; /* Marco rosa claro */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        /* Estilo para enlaces */
         a {
-            color: #2563eb;
+            color: #b02a6b;
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #e5e7eb;
-            font-size: 0.9rem;
+            color: #d63384;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <!-- Tu foto de perfil -->
-        <img src="./ima4.jpeg" alt="Foto de perfil de Uzziel">
-        <h1>¡Hola! Soy Uzziel</h1>
-        <p>Estudiante de Ingeniería en TICs</p>
-    </header>
+    <!-- Caja 1: Portada y Fotos de perfil -->
+    <div class="caja">
+        <h1>Yo soy Hanitzy</h1>
+        <div class="imagen">
+            <img class="ima" src="./imagenes/foto-hani.jpeg" alt="Foto 1">
+            <img class="ima" src="./imagenes/foto2-hani.jpeg" alt="Foto 2">
+            <img class="ima" src="./imagenes/foto3-hani.jpeg" alt="Foto 3">
+            <img class="ima" src="./imagenes/foto4-hani.jpeg" alt="Foto 4">
+        </div>
+    </div>
 
-    <main>
-        <section>
-            <h2>Sobre mí</h2>
-            <p>
-                Soy una persona que está estudiando TICs. Valoro mucho el esfuerzo de las personas, 
-                soy una persona bacana, me gusta ayudar,las mujere y el futfol es mi pacion.
-            </p>
-        </section>
+    <!-- Caja 2: ¿Quién soy? -->
+    <div class="caja">
+        <h1>¿Quién soy?</h1>
+        <p>Soy alguien que valora la honestidad, que le gustan las personas graciosas, respetuosas, etc.</p>
+    </div>
 
-        <section>
-            <h2>¿De dónde vengo?</h2>
-            <!-- Imagen de la iglesia -->
-            <img class="img-seccion" src="./ima.jpg" alt="Iglesia de Mangas, Tezontepec de Aldama">
-            <p>
-                Vengo de muy, muy lejano, un pueblito llamado <strong>Mangas</strong> en el municipio de 
-                <strong>Tezontepec de Aldama</strong>, un pueblo tranquilo y bonito pero muy unido para cualquier cosa.
-            </p>
-        </section>
+    <!-- Caja 3: Origen -->
+    <div class="caja">
+        <img class="img-seccion" src="./ima3.jpg" alt="" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+        <h1>¿De dónde vengo?</h1>
+        <p>Yo vengo de Motobatha, un pueblito de Mixquiahuala. El cual no es muy conocido, pero tiene algunas cosas bonitas. También vengo del vientre de mi mamá.</p>
+        <img class="img-seccion" src="./ima.jpg" style="width: 260px; height: auto; display: block; margin-left: auto; margin-right: auto; border: 6px solid #fce8ef; border-radius: 12px;" alt="Motobatha">
+    </div>
 
-        <section>
-            <h2>¿Por qué estudio TICs?</h2>
-            <!-- Imagen de los billetes -->
-            <img class="img-seccion" src="./ima2.jpg" alt="Motivación profesional y ganancias en TICs">
-            <p>
-                Porque me llamó la atención lo que puede ganar un ingeniero y porque me gusta lo que se ve 
-                dentro de la carrera tambien por que es una carrera nueva y divertida hoy en dia.
-            </p>
-        </section>
+    <!-- Caja 4: ¿Por qué estudio TICs? -->
+    <div class="caja">
+        <h1>¿Por qué estudio TICs?</h1>
+        <p>Porque me gusta, es una carrera bien pagada, y tiene algo que ver con mi especialidad de la preparatoria.</p>
+    </div>
 
-        <section>
-            <h2>Mis pasatiempos</h2>
-            <!-- Foto jugando fútbol (más chica con la clase img-chica) -->
-            <img class="img-chica" src="./ima3.jpeg" alt="Uzziel jugando fútbol en la cancha">
-            <ol>
-                <li>Jugar fútbol</li>
-                <li>Jugar videojuegos</li>
-                <li>Escuchar música</li>
-                <li>Ver TikTok</li>
-                <li>Ver películas</li>
-            </ol>
-        </section>
+    <!-- Caja 5: Pasatiempos -->
+    <div class="caja">
+        <h1>¿Cuáles son mis pasatiempos?</h1>
+        <p>Algunos de mis pasatiempos son:</p>
+        <img class="img-seccion" src="./ima2.jpg" style="width: 260px; height: auto; display: block; margin-left: auto; margin-right: auto; border: 6px solid #fce8ef; border-radius: 12px; margin-bottom: 15px;" alt="Pasatiempo">
 
-        <section>
-            <h2>Contenido favorito</h2>
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/results?search_query=resumen+de+peliculas" target="_blank" rel="noopener noreferrer">
-                        Resúmenes de películas
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-                        TikTok (Entretenimiento)
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/results?search_query=mejores+jugadas+de+futbol" target="_blank" rel="noopener noreferrer">
-                        Highlights y jugadas de fútbol
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/results?search_query=tutoriales+de+programacion+y+tecnologia" target="_blank" rel="noopener noreferrer">
-                        Tutoriales de Tecnología y Programación
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitch.tv" target="_blank" rel="noopener noreferrer">
-                        Streams de Videojuegos en Twitch
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/results?search_query=resumen+de+anime" target="_blank" rel="noopener noreferrer">
-                        Resúmenes de Anime
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </main>
+        <ol style="list-style-position: inside; padding: 0;">
+            <li>Escuchar música</li>
+            <li>Jugar videojuegos</li>
+            <li>Ver series</li>
+            <li>Dormir</li>
+            <li>Salir con mis amigos</li>
+        </ol>
+    </div>
 
-    <footer>
-        <p>© 2026 Uzziel — Mi Página Web</p>
-    </footer>
+    <!-- Caja 6: Contenido favorito -->
+    <div class="caja">
+        <h1>Contenido favorito</h1>
+        <p>Algunos de mis contenidos favoritos son:</p>
+
+        <ul style="list-style: none; padding: 0;">
+            <li><a href="https://vt.tiktok.com/ZSgCqvs9M/" target="_blank">Majo Blásquez</a></li>
+            <li><a href="https://vt.tiktok.com/ZSgCqpdjG/" target="_blank" rel="noopener noreferrer">Serie de Cocardo</a></li>
+            <li><a href="https://www.tiktok.com/@yaniv1x?_r=1&_t=ZS-9ArswHvnhCP" target="_blank">El mamado de Yaniv</a></li>
+            <li><a href="https://vt.tiktok.com/ZSgCbSAxy/" target="_blank">Humor Futbolero en México</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>
